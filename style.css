@@ -1,0 +1,189 @@
+        :root {
+            --theme-yellow: rgb(255, 255, 0);
+        }
+
+        /* GLOBAL RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: white;
+        }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            background: black;
+            padding: 15px 40px;
+            border-bottom: 3px solid var(--theme-yellow);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* LOGO BOX */
+        .logo-box {
+            width: 120px;
+            height: 50px;
+            background: #333;
+            border: 2px solid var(--theme-yellow);
+            color: var(--theme-yellow);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* NAVIGATION */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+            align-items: center;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.25s;
+        }
+
+        nav ul li a:hover {
+            color: var(--theme-yellow);
+        }
+
+        /* SKEW BUTTON */
+        .contact-btn {
+            background: var(--theme-yellow);
+            border: 2px solid var(--theme-yellow);
+            padding: 10px 20px;
+            transform: skew(-25deg);
+            display: inline-block;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-btn span {
+            display: inline-block;
+            transform: skew(25deg);
+            font-weight: bold;
+            color: black;
+        }
+
+        .contact-btn:hover {
+            background: black;
+            border-color: var(--theme-yellow);
+        }
+
+        .contact-btn:hover span {
+            color: var(--theme-yellow);
+        }
+
+        /* HERO SECTION */
+        .hero-section {
+            width: 100vw;
+            height: 100vh;
+            background: black url('images/pattren-2.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px;
+        }
+
+        .hero-section p:first-child {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: black;
+            padding: 60px 40px;
+            border-top: 3px solid var(--theme-yellow);
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .footer-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-box h3 {
+            color: var(--theme-yellow);
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .footer-box p,
+        .footer-box a {
+            color: #d4d4d4;
+            margin: 6px 0;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer-box a:hover {
+            color: var(--theme-yellow);
+        }
+
+        .footer-bottom {
+            margin-top: 40px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #888;
+        }
+
+        .features {
+            color: black;
+            padding: 45px 0px;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .feature-card {
+            width: 30vh;
+        }
+
+        .yellow-skewed {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--theme-yellow);
+            width: 150px;
+            height: 150px;
+            margin-bottom: 50px;
+            transform: skew(-25deg) translateX(70px);
+        }
+
+        .yellow-skewed:hover {
+            transition-duration: 0.4s;
+            background-color: var(--theme-yellow);
+        }
+
+        .yellow-skewed img {
+            width: 50%;
+            transform: skew(25deg);
+        }
